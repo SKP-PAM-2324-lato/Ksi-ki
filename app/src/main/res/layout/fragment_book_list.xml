@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookList"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj nową książkę"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <TextView
+            android:text="Tytuł:"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:text="Autor:"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/author"
+            android:layout_width="match_parent"/>
+
+    </GridLayout>
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"/>
+
+    <ListView
+        android:id="@+id/bookListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:divider="@color/design_default_color_primary"
+        android:dividerHeight="1dp"/>
+
+
+
+
+</LinearLayout>
